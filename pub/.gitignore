@@ -2,4 +2,5 @@
 /env/
 /.idea/
 /static/
+../.idea/
 __pycache__
