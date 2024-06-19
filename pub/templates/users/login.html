@@ -5,9 +5,12 @@
     <title>Pub - Login</title>
 </head>
 <body>
-    <form method="post">
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
