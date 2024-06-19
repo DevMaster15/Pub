@@ -33,3 +33,6 @@ class UserProfile(AbstractBaseUser, CreateUpdateModel, PermissionsMixin):
 
     objects = UserProfileManager()
     USERNAME_FIELD = "email"
+
+    def __str__(self):
+        return self.email
